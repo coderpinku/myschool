@@ -177,14 +177,14 @@ header{
 }
 
 /* Utility classes */
+
 .top{
     position: fixed;
     z-index: 100;
-    bottom: 2.5rem;
-    right: 1rem;
-    
-    
+    bottom: 3.5rem;
+    right: 1.5rem;
 }
+
 .top i{
     display: inline;
     font-size: 2.5rem;
@@ -681,7 +681,6 @@ ul{
     }
  }
  
-/* Media queries */
 
 @media only screen and (max-width:1024px){
 
@@ -699,11 +698,7 @@ ul{
     #course{
         flex-wrap: wrap;
     }
-    /* .logo {
-        padding: 12px 8px;
-        margin: 10px 4px;
-    } */
-
+   
 }
 
 @media only screen and (max-width:920px){
@@ -717,10 +712,7 @@ ul{
     .testimonial{
         flex-wrap: wrap;
     }
-    /* .logo{
-        padding-right: 3%;
-    } */
-    .box2{
+       .box2{
         width: 80%;
         padding: 2rem;
     }    
@@ -779,10 +771,20 @@ ul{
         margin: 2rem 2rem;
     }
 }
+
+@media screen and (max-width:427px){
+    .nav-toggler{
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width:391px){
     .box2{
         width: 80%;
         padding: 2rem;
+    }
+    .header .logo, .header .nav {
+        padding: 0 23px;
     }
    
 }
