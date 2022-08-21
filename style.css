@@ -772,9 +772,12 @@ ul{
     }
 }
 
-@media screen and (max-width:427px){
+@media screen and (max-width:428px){
     .nav-toggler{
         margin-right: 10px;
+    }
+    .header .logo, .header .nav {
+        padding: 0 25px;
     }
 }
 
