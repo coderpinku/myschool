@@ -829,14 +829,23 @@ ul{
     /* .logo{
         align-items: center;
     } */
-    /* form{
-        text-align: center;
-        margin: 2rem 2rem;
+    .contact-form form{
+        /* text-align: left; */
+        margin: 2rem 3rem;
     }
-     */
+     
    
 }
-
+@media screen and (max-width:600px){
+    .modal-content form{
+        
+        margin: 1rem 1rem;
+   }
+   .modal-content{
+        width: 395px;
+   }
+    
+}
 @media screen and (max-width:428px){
     .nav-toggler{
         margin-right: 10px;
@@ -854,17 +863,20 @@ ul{
     .header .logo, .header .nav {
         padding: 0 15px;
     }
-   .modal-content form{
-        
-        margin: 1rem 1rem;
-   }
-   .modal-content{
-        width: 395px;
-   }
+   
 }
 @media screen and (max-width: 223px)
 .header .logo, .header .nav {
     padding: 0 1px;
+}
+
+@media screen and (max-width:240px){
+    .addOn{
+        margin: 2px;
+        width: 63px;
+    }
+    
+    
 }
 @keyframes openModel{
     from{ opacity: 0;}
