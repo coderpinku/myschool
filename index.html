@@ -34,7 +34,7 @@
                       <li><a href="#">Admission</a></li>
                       <li><a href="#">Enquiry</a></li>
                       <li><a href="#">Contact</a></li>
-                      <li><a href="#"><span>Login</span></a></li>
+                      <li><a href="#" onclick="openLoginPage()" id="login-panel"><span>Login</span></a></li>
                    </ul>
                 </nav>
             </div>
@@ -289,6 +289,20 @@
             </div>
         </div>
    </footer>
+   <div id="login-modal" class="modal">
+    <div class="modal-content">
+    <h1>Login</h1>
+    <span class="close-btn">&times;</span>
+    <form action="" method="get">
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <button class="btn-teacher model-btn">Login</button>
+        <button class="btn-teacher model-btn">Sign Up</button>
+       
+    </form>
+</div>
+</div>
+
    <a href="#headers" class="top show"><i class="fa fa-arrow-up"></i></a>
    <div class="top chat"><img src="img/chat.jpg" alt=""></div>
    <script src="script.js"></script>

@@ -535,12 +535,12 @@ strong{
 
 /* ------------------Contact Section ----------------- */
 
-form{
-    text-align: center;
+.contact-form form{
+    text-align: left;
     margin: 2rem 15rem;
 }
 
-.contact-form  input[type=text],textarea {
+input[type=text],textarea,input[type=password] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -550,6 +550,7 @@ form{
     margin-bottom: 16px;
     resize: vertical;
   }
+   
 
 #contact{
     background-color: rgb(249, 243, 236); 
@@ -650,6 +651,63 @@ ul{
 }
 
 
+/* Login PopUp Sections */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0,0.5);
+
+}
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0,0.2), 0 7px 20px 0 rgba(0, 0, 0,0.2);
+    animation-name: openModel;
+    animation-duration: 1.5s;
+}
+
+.modal-content h1{
+    text-align: center;
+    font-size: var(--hfont);
+    color: var(--color);
+}
+.modal-content form{
+    
+        text-align: left;
+        margin: 1rem 9rem;
+    
+}
+.modal-content input[type=text],input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+.close-btn{
+    color: #ccc;
+    margin: -60px 0;
+    float: right;
+    font-size: 30px;
+}
+.close-btn:hover,.close-btn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /** Media queries **/
@@ -747,6 +805,11 @@ ul{
     margin: 0 9px;
     font-weight: 100;
   }
+  .model-btn{
+    margin: 2px;
+    height: 28px;
+    width: 50px;
+  }
  }
   
 @media screen and (max-width:740px) {
@@ -766,10 +829,12 @@ ul{
     /* .logo{
         align-items: center;
     } */
-    form{
+    /* form{
         text-align: center;
         margin: 2rem 2rem;
     }
+     */
+   
 }
 
 @media screen and (max-width:428px){
@@ -789,5 +854,19 @@ ul{
     .header .logo, .header .nav {
         padding: 0 15px;
     }
-   
+   .modal-content form{
+        
+        margin: 1rem 1rem;
+   }
+   .modal-content{
+        width: 395px;
+   }
+}
+@media screen and (max-width: 223px)
+.header .logo, .header .nav {
+    padding: 0 1px;
+}
+@keyframes openModel{
+    from{ opacity: 0;}
+    to{ opacity: 1;}
 }

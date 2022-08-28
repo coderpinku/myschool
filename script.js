@@ -44,6 +44,28 @@
         }
       }, 1000);
 
-      // Top Icon Section 
+      // Login PopUp page section
+
+      var openmodel = document.getElementById('login-modal');
+      var closeBtn = document.getElementsByClassName('close-btn')[0];
+      
+      closeBtn.addEventListener('click', closeLogin);
+      window.addEventListener('click', clickoutside);
+
+      function openLoginPage(){
+        openmodel.style.display = 'block';
+      }
+
+      function closeLogin(){
+        openmodel.style.display = 'none';
+
+      }
+      function clickoutside(e){
+        if(e.target == openmodel){
+          openmodel.style.display = 'none';
+        }
+
+      }
+
 
      
