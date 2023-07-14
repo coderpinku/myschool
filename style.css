@@ -16,9 +16,11 @@ body{
     margin: 0px;
     padding: 0px;
     overflow: auto;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
 
+}
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -705,7 +707,7 @@ ul{
     width: 600px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0,0.2), 0 7px 20px 0 rgba(0, 0, 0,0.2);
     animation-name: openModel;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 .modal-content h1{
@@ -888,6 +890,9 @@ ul{
     .header .logo, .header .nav {
         padding: 0 25px;
     }
+    html{
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width:391px){
@@ -900,9 +905,11 @@ ul{
     }
    
 }
-@media screen and (max-width: 223px)
-.header .logo, .header .nav {
-    padding: 0 1px;
+@media screen and (max-width: 223px){
+
+    .header .logo, .header .nav {
+        padding: 0 1px;
+    }
 }
 
 @media screen and (max-width:240px){
